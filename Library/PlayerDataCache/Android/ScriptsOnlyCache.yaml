@@ -10,11 +10,17 @@ ScriptsOnlyBuild:
     - OVRConfig
     Oculus.VR.dll:
     - OVRCameraRig
+    - OVRControllerHelper
     - OVRHeadsetEmulator
     - OVRManager
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
-    - UnityEditor.TestTools.TestRunner.TestListCacheData
   sceneClasses:
     Assets/Scenes/bow.unity:
     - Class: 1
@@ -58,23 +64,25 @@ ScriptsOnlyBuild:
     - Class: 109
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9866}
+      Script: {instanceID: 9870}
     - Class: 114
-      Script: {instanceID: 10002}
+      Script: {instanceID: 10008}
     - Class: 114
-      Script: {instanceID: 10204}
+      Script: {instanceID: 10212}
     - Class: 114
-      Script: {instanceID: 10518}
+      Script: {instanceID: 10456}
     - Class: 114
-      Script: {instanceID: 10724}
+      Script: {instanceID: 10522}
     - Class: 114
-      Script: {instanceID: 10730}
+      Script: {instanceID: 10728}
     - Class: 114
-      Script: {instanceID: 11212}
+      Script: {instanceID: 10734}
+    - Class: 114
+      Script: {instanceID: 11002}
+    - Class: 114
+      Script: {instanceID: 11218}
     - Class: 114
       Script: {instanceID: 11846}
-    - Class: 114
-      Script: {instanceID: 21998}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 136
@@ -548,7 +556,7 @@ ScriptsOnlyBuild:
     className: TeleportTransitionWarp
   - hash:
       serializedVersion: 2
-      Hash: cb390f72d3bbd992cfa547449a4873e7
+      Hash: 9e44eb8425d2cc9a0babbbd295224701
     assemblyName: Assembly-CSharp.dll
     namespaceName: OculusSampleFramework
     className: DistanceGrabber
@@ -578,7 +586,7 @@ ScriptsOnlyBuild:
     className: AIPlayer
   - hash:
       serializedVersion: 2
-      Hash: 92e0a999ef73253fc25f2d7bfe55610a
+      Hash: 34d03f20c9b4c484f9ec480c294d0404
     assemblyName: Oculus.VR.dll
     namespaceName: 
     className: OVROverlay
@@ -762,6 +770,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SpriteAnimator
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Crate
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1262,7 +1276,7 @@ ScriptsOnlyBuild:
     className: OVRInputModule
   - hash:
       serializedVersion: 2
-      Hash: 11206112ec687db2172d3c94b2bdc0f2
+      Hash: e07c19369bd2abc078a4c9c9ea1b87e3
     assemblyName: Oculus.VR.dll
     namespaceName: 
     className: OVRGrabber
@@ -1452,12 +1466,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Crate
   platform: 13
   scenePathNames:
   - Assets/Scenes/bow.unity

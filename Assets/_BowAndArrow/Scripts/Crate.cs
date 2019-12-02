@@ -6,7 +6,10 @@ public class Crate : MonoBehaviour, IDamageable
 {
     public void Damage(int amount)
     {
-        TurnRed();
+        MeshRenderer meshRenderer = GetComponent<MeshRenderer>();
+        if (meshRenderer.material.color == Color.red) {
+            DestroyImmediate(gameObject);
+        } else { TurnRed(); }
     }
 
     private void TurnRed()
